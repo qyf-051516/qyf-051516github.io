@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java代码展示</title>
+    <!-- 代码高亮库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .code-section {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>我的Java代码示例</h1>
+    
+    <div class="code-section">
+        <h2>Hello World示例</h2>
+        <pre><code class="language-java">
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+        </code></pre>
+    </div>
+
+    <div class="code-section">
+        <h2>冒泡排序算法</h2>
+        <pre><code class="language-java">
+public class BubbleSort {
+    public static void sort(int[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j < n-i-1; j++) {
+                if (arr[j] > arr[j+1]) {
+                    // 交换元素
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+    }
+}
+        </code></pre>
+    </div>
+</body>
+</html>
